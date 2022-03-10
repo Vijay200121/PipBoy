@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PipBoy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./css/tether.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./pipboy.app.css" />
+
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">PIPBOY from FO-IV</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">STAT</a>
+                    </li>
+                    <li class="navbar-item active">
+                        <a href="inv.html" class="nav-link">[INV]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="data.html" class="nav-link">DATA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link">MAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="radio.html" class="nav-link">RADIO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active" id="weapon-tab" data-bs-toggle="tab" data-bs-target="#weapons" type="button" role="tab" aria-controls="home" aria-selected="true">WEAPON</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="armour-tab" data-bs-toggle="tab" data-bs-target="#armour" type="button" role="tab" aria-controls="home" aria-selected="true">ARMOUR</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="aid-tab" data-bs-toggle="tab" data-bs-target="#aid" type="button" role="tab" aria-controls="home" aria-selected="true">AID</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content">
+                        <div class="tab-pane active full" id="weapons" role="tabpanel">
+
+                                <ul class="item-list">
+
+                                    <!--handguns-->
+
+                                    <li class="handgun"><a class="profile-menu-trigger" href="#" data-trigger="dropdown" style="text-decoration: none;">Hand Guns</a>
+
+                                        <ul class="profile-submenu submenu">
+                                            <li><a href="#" class="44_pistol active" style="text-decoration: none;">.44 Pistol</a></li>
+                                            <li><a href="#" class="eddies_peace" style="text-decoration: none;">Eddie's Peace</a></li>
+                                            <li><a href="#" class="kelloggs_pistol" style="text-decoration: none;">Kellogg's Pistol</a></li>
+                                            <li><a href="#" class="the_gainer" style="text-decoration: none;">The Gainer</a></li>
+                                            <li><a href="#" class="10mm_pistol" style="text-decoration: none;">10mm Pistol</a></li>
+                                            <li><a href="#" class="wastelanders_friend" style="text-decoration: none;">Wastelanders Friend</a></li>
+                                            <li><a href="#" class="diliverer" style="text-decoration: none;">Diliverer</a></li>
+                                            <li><a href="#" class="flare_gun" style="text-decoration: none;">Flare Gun</a></li>
+                                            <li><a href="#" class="western_revolver" style="text-decoration: none;">Western Revolver</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                     <!--rifles-->
+
+                                     <li class="rifles"><a class="profile-menu-trigger" href="#" data-trigger="dropdown" style="text-decoration: none;">Rifles</a>
+
+                                        <ul class="profile-submenu submenu">
+                                            <li><a href="#" class="amr active" style="text-decoration: none;">Anti-material Rifle</a></li>
+                                            <li><a href="#" class="ar" style="text-decoration: none;">Assault Rifle</a></li>
+                                            <li><a href="#" class="gr" style="text-decoration: none;">Gauss Rifle</a></li>
+                                            <li><a href="#" class="tlm" style="text-decoration: none;">The Last Minute</a></li>
+                                            <li><a href="#" class="scn" style="text-decoration: none;">SplatterCannon</a></li>
+                                            <li><a href="#" class="smg" style="text-decoration: none;">Sub Machine Gun</a></li>
+                                        </ul>
+
+                                    </li>
+
+                                    <!--shotguns-->
+
+                                    <li class="shotguns"><a class="profile-menu-trigger" href="#" data-trigger="dropdown" style="text-decoration: none;">Shotguns</a>
+
+                                        <ul class="profile-submenu submenu">
+                                            <li><a href="#" class="cs active" style="text-decoration: none;">Combat Shotgun</a></li>
+                                            <li><a href="#" class="justice" style="text-decoration: none;">Justice</a></li>
+                                            <li><a href="#" class="lft" style="text-decoration: none;">Le Fusil Terribles</a></li>
+                                            <li><a href="#" class="dbs" style="text-decoration: none;">Double Barrel Shotgun</a></li>
+                                        </ul>
+
+                                    </li>
+
+                                    <!--heavy weapons-->
+
+                                    <li class="heavy"><a class="profile-menu-trigger" href="#" data-trigger="dropdown" style="text-decoration: none;">Heavy Weapons</a>
+
+                                        <ul class="profile-submenu submenu">
+                                            <li><a href="#" class="fm active" style="text-decoration: none;">Fat Man</a></li>
+                                            <li><a href="#" class="bb" style="text-decoration: none;">Big Boy</a></li>
+                                            <li><a href="#" class="dfa" style="text-decoration: none;">Death From Above</a></li>
+                                            <li><a href="#" class="nnl" style="text-decoration: none;">Nuka-Nuke Launcher</a></li>
+                                        </ul>
+
+                                    </li>
+
+                                    <div class="item-stats">
+                                        <div class="center-image">
+                                            <div class="w_img">
+                                                <img  src="./handguns/44_pistol.png" width="400" height="184" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row-highlight">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="w_name">.44 Pistol</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row-highlight">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="damage pull-right">48</div>
+                                                    <div class="pull-left">Damage</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row-highlight">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="magazine pull-right">6</div>
+                                                    <div class="pull-left">Magazine</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row-highlight">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="fire_rate pull-right">6</div>
+                                                    <div class="pull-left">Fire Rate</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row-highlight">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="range pull-right">119</div>
+                                                    <div class="pull-left">Range</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row-highlight">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="accuracy pull-right">66</div>
+                                                    <div class="pull-left">Accuracy</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row-highlight">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="weight pull-right">4.2</div>
+                                                    <div class="pull-left">Weight</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row-highlight">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="value pull-right">99</div>
+                                                    <div class="pull-left">Value</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </ul>
+
+                        </div>
+                        <div class="tab-pane" id="armour" role="tabpanel">
+                            NO ARMOUR AVAILABLE
+                        </div>
+                        <div class="tab-pane" id="aid" role="tabpanel">
+                            NO AID AVAILABLE
+                        </div>
+                        
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <navbar class="navbar navbar-light pip-footer">
+            <div class="row">
+                <div class="col-3">
+                    HP 90/90
+                </div>
+                <div class="col-6">
+                    <span>LEVEL 1</span>
+                    <div class="level-progress">
+                        <div class="level-progress-indicator"></div>
+                    </div>
+                </div>
+                <div class="col-3 text-right">
+                    AP 50/50
+                </div>
+            </div>
+        </navbar>
+
+        
+
+
+
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/tether.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./pipboy.app.js"> </script>
+    </body>
+</html>
